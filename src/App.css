@@ -1,3 +1,27 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tea {
+  height: 200px;
+  width: auto;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +38,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #335aa8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
