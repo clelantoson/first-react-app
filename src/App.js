@@ -4,7 +4,7 @@ import teaImage from "./tea.PNG";
 import Card from "./Card";
 
 const App = () => {
-  const emojis = [1, 2, 3, 4, 5];
+  const emojis = ["😍", "😍", "😸", "👀", "😸", "👀"];
 
   return (
     <>
@@ -12,12 +12,9 @@ const App = () => {
         <p style={{ marginLeft: "20px", backgroundColor: "red" }}>Bonjour </p>
         <img className="tea" src={teaImage} alt="tea" />
         <div className="cards">
-          <Card emoji="😍" />
-          <Card emoji="😸" />
-          <Card emoji="😍" />
-          <Card emoji="👀" />
-          <Card emoji="😸" />
-          <Card emoji="👀" />
+          {emojis.map((emoji) => (
+            <Card emoji={emoji} />
+          ))}
         </div>
       </div>
     </>
